@@ -1,0 +1,106 @@
+\startfirstchapter{Introduction}
+\label{chapter:introduction}
+
+The main goal of this document was to set up competently the Latex framework for a thesis document at UVic, with all the assorted details of front pages, numbering and so on. In order to present such a template to other users, the content has been filled from the guidelines of an experienced graduate advisor and supervisor on how to write a thesis in the first place.
+
+The Latex framework given in these files should work in the Windows, Mac and Unix environments. In Windows, the development environment is MikTex, available as a free download from the web page at \textit{miktex.org}. Miktex includes all the tools for \LaTeX, without a convenient editor. I have been using
+\textit{WinEdt} which is still the best as far as working in a well integrated manner with MikTex, even if one has to pay a small price. \textit{WinEdt} is available from \textit{winedt.com}. The corresponding package for the Mac is MacTex, available from \textit{www.tug.org$\backslash$mactex}.
+Please note that in the actual file with the \LaTeX code there are extra local comments referring to small differences between platforms. This is especially crucial for the insertion of figures of any type (see also Chapter 3).
+
+The package \textit{BibTex} is used for the automatic bibliography and it is incorporated in the MikTex package. The style of bibliography exemplified is this document is the "plain" one,
+most often used in science theses. This is shown
+by the entry \textit{plain} in the \textit{bibliographystyle}
+command which can be found in the top file, namely
+\textit{mainthesisUVIC.tex}. Substitute the
+appropriate bibliography style for your needs by finding
+the correct parameter. In order to help you there is a PDF
+file entitled: "InformationOnBibliographyStyles.pdf" in the
+same folder as the top file \textit{mainthesisUVIC.tex}.
+
+The title pages are correctly formatted according to the guidelines. However the superset is given here as a template for a Ph.D. dissertation and adjustments must be made for a Master's thesis accordingly.
+
+When presented with the task of having to write a large document reporting on the work done for the thesis portion of a graduate degree most people have anxiety attacks. It seems that the research work has been done, probably with great competence, yet one feels totally lost on how to approach the writing part - unless of course one is a writer to start with. While I am not at all the expert, I have experience both in writing documents and in supervising many graduate students. I have developed a simple enough structure which guides me and my students most of the times fairly well. We then customize it for different audiences and situations. The content of this pseudo mini thesis summarizes the structure I use.
+
+This document, however, is \textit{not at all} a Latex manual. There are a few examples sprinkled here and there of various commands. However no explanations or full examples are given for how to use Latex itself. That is most certainly left to the user!
+
+Starting at the very beginning, my first step is to set up the formatting framework before the content itself, just like the frame of a building is the sustaining structure. By having the content only in bullet points which can be moved and changed at will I can have a whole document which will always compile and be ready for presentation. I ask my student to prepare mock chapters which contains only these bulleted lists to be used for discussion. The bulleted list I had for this chapter is as follows:
+\begin{enumerate}
+        \item State the dual purpose of this document (just mention briefly);
+        \item State what this document is not (just mention);
+        \item Describe what I think should go in the Introduction in general;
+        \item Describe what I think should not go in the "Introduction" chapter in general;
+        \item Describe the structure of the document.
+\end{enumerate}
+
+When the writing for a chapter is particularly long, it might be better to have some, if not all, sections in separate files. It makes it a lot easier to find possible errors in Latex as well, since the command to input a file for a separate section can always be commented out. When looking at the \textit{.tex} file itself for this introduction chapter you will notice that there are 2 sections, namely "How to Start an Introduction" and "Is a Review of All previous Work Necessary Here?" which are included as separate files, immediately following this paragraph.
+\input chapters/1/sec_intro
+\input chapters/1/sec_review
+%\pagebreak
+\section{My Claims}
+Something must be new in this work, no matter how small, since you are getting a graduate degree for it! Tell me about it clearly and succintly right now, just as you did in the abstract. Make an impact here. How about something like the following box:
+
+I make \textit{four} claims which
+my dissertation validates:
+\\
+
+\framebox{%
+\parbox{5in}{
+	My new algorithm to solve the problem of doing nothing include these important new features whose practical applicability can be proved both formally and empirically:
+	\begin{enumerate}
+	\item first feature;
+	\item second feature;
+	\item everything is much easier to understand, and therefore, easier to implement correctly.
+	\end{enumerate}
+}}
+\\
+
+\noindent Claim 1 and claim 2 are \textit{quantitative} - they will be proven by experiment.
+
+\noindent Claim 3 is \textit{qualitative} - they will be demonstrated by argument.
+
+\subsection{The Importance of My Claims}
+
+Some very important positive consequences
+arise from the validation of the above claims.
+It is these consequences that comprise a significant
+positive contribution to research in the field
+of whatever the field is.
+\\
+
+\noindent Claim 1 implies that:
+\begin{enumerate}
+\item{Something profound which applies to:
+	\begin{itemize}
+	\item {something excellent;}
+	\item {something important.}
+	\end{itemize}}
+\item{Something else just as profound.}
+\end{enumerate}
+
+\noindent Claim 2 implies that:
+\begin{itemize}
+\item{Repeat as above if necessary and useful.}
+\end{itemize}
+
+\noindent The consequence of claim 3 is that:
+\begin{itemize}
+\item{There must be something good coming out of all this work!}
+\end{itemize}
+
+\section{Agenda}
+
+This section provides a map of the dissertation
+to show the reader where and how it validates
+the claims previously made. Here is where I am also presenting my own style of organization which may be totally different from what your supervisor thinks. However, trust me, this is a good solid beginning for a structure. Your supervisor may ask you to change it, but will still appreciate what you have! For each of the chapters below I also give a short summary of what the main focus should be and then I expand on it  a bit within the chapter itself.
+
+\begin{description}
+\item[\textbf{Chapter 1}] contains a statement of
+the claims which will be proved by this dissertation followed by an overview of the structure of the document itself.
+\item[\textbf{Chapter 2}] describes in details the open problem which is to be tackled together with its context, its impact and the overall motivation for the research overall.
+\item[\textbf{Chapter 3}] gives the new research, its methodology, the algorithms involved, the new solution, the new work done. Formal proofs and arguments are made here. This is the first of the two contributions expected in a thesis for a graduate degree.
+\item[\textbf{Chapter 4}] is where the experiments and the methodology for them is fully described. The first part includes all details of how the empirical side of the research has been conducted. Note that not every thesis has this empirical portion.
+\item[\textbf{Chapter 5}] includes the evaluation of the data presented above and the comparisons with the work of others, to show how much better the new approach is. This is the second of the two contributions expected in a thesis for a graduate degree. Note that this part could be consolidated into the chapter above.
+\item[\textbf{Chapter 6}] contains a restatement of the claims and results of the dissertation. It also enumerates avenues of future work for further development of the concept and its applications.
+\end{description}
+
+The list above is not complete. Chapter 3 actually includes a lot more, as I could not resist placing in it a few \LaTeX examples to help you along. This document is not a primer for \LaTeX, but there is no harm done in giving a little help.

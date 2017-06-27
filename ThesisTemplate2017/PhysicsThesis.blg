@@ -1,0 +1,17 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: PhysicsThesis.aux
+A level-1 auxiliary file: chapters/1/chapter_intro.aux
+A level-1 auxiliary file: chapters/2/chapter_problem.aux
+A level-1 auxiliary file: chapters/3/chapter_new.aux
+A level-1 auxiliary file: chapters/4/chapter_experiments.aux
+A level-1 auxiliary file: chapters/5/chapter_evaluation.aux
+A level-1 auxiliary file: chapters/6/chapter_conclusion.aux
+A level-1 auxiliary file: chapters/7/coolstuff.aux
+Case mismatch error between cite keys Atkin and atkin
+---line 3 of file chapters/7/coolstuff.aux
+ : \citation{Atkin
+ :                }
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: chapters/appendix/chapter_app.aux
+The style file: plain.bst
+Database file #1: UvicThesis.bib
+(There was 1 error message)

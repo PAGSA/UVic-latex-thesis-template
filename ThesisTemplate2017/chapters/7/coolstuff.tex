@@ -1,0 +1,84 @@
+\startchapter{Physics Stuff}
+\label{stuff}
+
+I added this chapter to demonstrate some features I added to the physics template.
+\section{Feynmann diagrams}
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a1) {\(u\)};
+\vertex[right=5cm of a1] (a2){\(u\)};
+\vertex[below=3mm of a1] (a3){\(d\)};
+\vertex[right=5cm of a3] (a4){\(d\)};
+\vertex[below=3mm of a3] (a5){\(d\)};
+\vertex[right=1.5cm of a5] (a6);
+\vertex[right=5cm of a5] (a7){\(u\)};
+\vertex[below right=of a6] (b1);
+\vertex[right=of b1] (c1){\(e^{-}\)};
+\vertex[below right=of b1](c2){\(\overline \nu_{e}\)};
+
+\diagram* {
+	{[edges=fermion]
+		(a1) -- (a2),
+		(a3) -- (a4),
+		(a5) -- (a6) -- (a7),
+		(b1) -- (c1),
+		(b1) -- (c2)
+	},
+	(a6) -- [boson, edge label=\(W^{-}\)] (b1),
+};
+\end{feynman}
+\end{tikzpicture}
+\\
+See more examples \href{https://www.sharelatex.com/learn/Feynman_diagrams}{here}. Other packages for feynmann diagrams do exist, this is the only one I can get to work with texstudio on windows 10.\\
+\section{better hyperlinks}
+Set colours at the end of macros/usepackages.tex. I recommend dark colours or black to look more professional. I set the colours bright for now for visibility. \\
+urls: \url{google.com}\\
+internal links: \ref{stuff}\\
+citations: \cite{atkin}\\
+Basic colour choices are red, green, blue, cyan, magenta, yellow, black, gray, white, darkgray, lightgray, brown, lime, olive, orange, pink, purple, teal, violet.
+Custom colours also possible. Documentation \href{http://muug.ca/mirror/ctan/macros/latex/contrib/xcolor/xcolor.pdf}{here}.
+
+\section{math scripts}
+ Addition of slash notation($\backslash$slashed\{\}) and script letters($\backslash$mathscr\{\}):
+ \begin{equation}
+ \mathscr{L}, \mathscr{H},\slashed{\partial}
+ \end{equation}
+ \section{tables}
+ The book tabs option allows for slightly better looking tables:\\
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ccc}\hline
+		Heading 1 & Heading 2 & Heading 3 \\ \hline
+		a & b & c \\ 
+		d & e & f\\ \hline
+	\end{tabular}
+	\caption{Regular Table}
+\end{table}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ccc}\toprule
+		Heading 1 & Heading 2 & Heading 3 \\ \midrule
+		a & b & c \\
+		d & e & f\\ \bottomrule
+	\end{tabular}
+	\caption{Booktabs Table}
+\end{table}
+\\
+Either than spacing the other main difference is a slight bolding of the upper and lower lines. The dcolumn option allows alignment on decimal point:
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|}\hline
+		10.2 & 12.24 & 1000.2 \\ 
+		54 & 2.8 & 4.35\\ \hline
+	\end{tabular}
+	\caption{Regular Table}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\newcolumntype{d}{D{.}{.}{-1}}
+	\begin{tabular}{|d|d|d|}\hline
+		10.2 & 12.24 & 1000.2 \\ 
+		54 & 2.8 & 4.35\\ \hline
+	\end{tabular}
+	\caption{dcolumn Table}
+\end{table}

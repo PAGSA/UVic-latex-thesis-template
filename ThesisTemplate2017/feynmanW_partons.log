@@ -1,0 +1,66 @@
+This is MetaPost, version 1.999 (MiKTeX 2.9) (MiKTeX 2.9)  29 MAY 2017 14:16
+**feynmanW_partons
+(C:/Users/Caleb/AppData/Local/Programs/MiKTeX 2.9/metapost/base/mpost.mp
+(C:/Users/Caleb/AppData/Local/Programs/MiKTeX 2.9/metapost/base/plain.mp
+Preloading the plain mem file, version 1.004) ) (./feynmanW_partons.mp
+(C:/Users/Caleb/AppData/Local/Programs/MiKTeX 2.9/metapost/feynmf/feynmp.mp)
+! angle(0,0) is taken as zero.
+<recently read> ;
+                 
+marrow->...ection(EXPR3)*length((EXPR2))of(EXPR2);
+                                                  z=point(EXPR3)*length((EXP...
+arrow->begingroup.marrow((EXPR2),0.5)
+                                     endgroup
+<to be read again> 
+                   )
+draw_plain_arrow->...aw(EXPR2);cfill(arrow(EXPR2))
+                                                  ;endgroup
+<to be read again> 
+                   endgroup
+<to be read again> 
+                   ;
+vdraw_arc->...cantokens("draw_"&(EXPR2))((EXPR4));
+                                                  vdraw_arc_label((EXPR4),(S...
+<for(1)> ...1),(EXPR0)),vlist[(1)]arc[(EXPR0)]lbl)
+                                                  ;vlist[(1)]arc[(EXPR0)]sty...
+<for(1)> ...arc[j]sty:="";endgroup;fi.fi.fi.endfor
+                                                  ; ENDFOR
+vdraw->...]sty:="";endgroup;fi.fi.fi.endfor;endfor
+                                                  .for.i=polygons:vdraw_labe...
+l.40 vdraw
+          ;
+? 
+! Emergency stop.
+<recently read> ;
+                 
+marrow->...ection(EXPR3)*length((EXPR2))of(EXPR2);
+                                                  z=point(EXPR3)*length((EXP...
+arrow->begingroup.marrow((EXPR2),0.5)
+                                     endgroup
+<to be read again> 
+                   )
+draw_plain_arrow->...aw(EXPR2);cfill(arrow(EXPR2))
+                                                  ;endgroup
+<to be read again> 
+                   endgroup
+<to be read again> 
+                   ;
+vdraw_arc->...cantokens("draw_"&(EXPR2))((EXPR4));
+                                                  vdraw_arc_label((EXPR4),(S...
+<for(1)> ...1),(EXPR0)),vlist[(1)]arc[(EXPR0)]lbl)
+                                                  ;vlist[(1)]arc[(EXPR0)]sty...
+<for(1)> ...arc[j]sty:="";endgroup;fi.fi.fi.endfor
+                                                  ; ENDFOR
+vdraw->...]sty:="";endgroup;fi.fi.fi.endfor;endfor
+                                                  .for.i=polygons:vdraw_labe...
+l.40 vdraw
+          ;
+End of file on the terminal!
+
+
+ 
+Here is how much of MetaPost's memory you used:
+ 327 strings using 4808 characters
+ 1145968 bytes of node memory
+ 924 symbolic tokens
+ 12i,77n,24p,114b,3f stack positions out of 16i,96n,25p,200b,4f

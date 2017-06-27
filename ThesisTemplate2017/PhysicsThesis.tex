@@ -1,0 +1,63 @@
+%*********************************************************************************************************
+%This is a modified uvic latex template specifically designed for physics and astronomy students
+%
+%Designed by Caleb Miller
+%
+%Possible interactions between packages have not been throughly tested
+%Forward any suggestions/improvements to calebmiller@uvic.ca unless I've already graduated. Then its your job.
+%
+%Structure borrowed heavily from Michelle L. Crane, Queen's University
+%*********************************************************************************************************
+
+%*********************************************************************************************************
+% PACKAGES AND DEFINTIONS
+%*********************************************************************************************************
+\documentclass[12pt,oneside]{book}
+\include{macros/style}	%If thesis not matching style change here
+\include{macros/use_packages} % all usepackage commands and newcommands in this file
+%\include{macros/astro} %unique shortcuts and packages for astro students
+%*********************************************************************************************************
+% INCLUDE ONLY
+%*********************************************************************************************************
+% Allows compling of individual chapters for faster compile times speedy format checking
+%\includeonly{chapters/7/coolstuff}
+% in order to speed up compile time when you're focussing on some particular part.
+
+
+
+%*********************************************************************************************************
+% DOCUMENT
+%*********************************************************************************************************
+\begin{document}
+
+% Title page
+\input frontmatter/PhD %only difference is use of dissertation or thesis on title page
+%\input frontmatter/MSc
+
+\newpage
+
+	\include{chapters/1/chapter_intro}
+	\include{chapters/2/chapter_problem}
+	\include{chapters/3/chapter_new}
+	\include{chapters/4/chapter_experiments}
+	\include{chapters/5/chapter_evaluation}
+	\include{chapters/6/chapter_conclusion}
+	\include{chapters/7/coolstuff}
+	\appendix
+	\include{chapters/appendix/chapter_app}
+	
+% The style of bibliography exemplified here is the "plain",
+% normally used in science theses. This is shown
+% by the entry {plain} below. Substitute the
+% appropriate bibliography style. See also the
+% PDF file "InformationOnBibliographyStyles" in this
+% directory for more choices.
+
+% The Bibliography file is a BibTex file named
+% UVicThesis.bib and called below
+
+	\TOCadd{Bibliography}
+	\bibliographystyle{plain}
+	\bibliography{UvicThesis}
+
+\end{document}
