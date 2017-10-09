@@ -1,5 +1,7 @@
 HOW TO USE THIS TEMPLATE(updated by Caleb Miller, calebmiller@uvic.ca)
 
+Orginal document distributed by University of Victoria Library, http://libguides.uvic.ca/uvicspace/etds/latextemplate
+
 (1) "PhysicsThesis.pdf" contains useful knowledge on how to do basic latex as well as thesis structure
 
 (2) Download and install the appropriate Latex package for Windows or Mac or Unix/Linux. I reccomend texstudio for windows users
