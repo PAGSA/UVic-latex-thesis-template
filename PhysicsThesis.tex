@@ -13,8 +13,8 @@
 % PACKAGES AND DEFINTIONS
 %*********************************************************************************************************
 \documentclass[12pt,oneside]{book}
-\include{macros/style}	%If thesis not matching style change here
-\include{macros/use_packages} % all usepackage commands and newcommands in this file
+\input{macros/style}	%If thesis not matching style change here
+\input{macros/use_packages} % all usepackage commands and newcommands in this file
 %\include{macros/astro} %unique shortcuts and packages for astro students
 %*********************************************************************************************************
 % INCLUDE ONLY
@@ -38,7 +38,7 @@
 % Title page
 %\PhDDisseration %pick one, not both
 \MastersThesis
-\input frontmatter/setup 
+\input{frontmatter/setup} 
 
 \newpage
 
