@@ -8,9 +8,7 @@ Formatting
 (github issue #16)
 *Changed preamble title styles (list of figures, abstract, etc..) to all
 match (github issue #17)
-*Added lines to allow easier title style setting, could merge into single
-command in future
-
+*Moved appendices after bibliography
 
 Misc
 ----------
@@ -20,3 +18,8 @@ UTF-8 encoding in chapters/5/chapter_evaluation.tex
 *Removed unnecessary \tpbreak in frontmatter/titlepage.tex
 *added .gitignore
 *added changelog.txt
+*Added lines to allow easier title style setting, could merge into single
+command in future
+*Renamed directories for more consistent style
+*Renamed files to be less physics specific
+*Updated README

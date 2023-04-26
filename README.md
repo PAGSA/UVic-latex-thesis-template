@@ -4,13 +4,11 @@ HOW TO USE THIS TEMPLATE(updated by Caleb Miller, calebmiller@uvic.ca)
 
 Orginal document distributed by University of Victoria Library, http://libguides.uvic.ca/uvicspace/etds/latextemplate
 
-(1) "PhysicsThesis.pdf" contains useful knowledge on how to do basic latex as well as thesis structure
+(1) "ThesisMain.tex" is the base tex file for the project
 
-(2) Download and install the appropriate Latex package for Windows or Mac or Unix/Linux. I reccomend texstudio for windows users
+(2) Set Masters Thesis, or PhD dissertation on line 40 of main file
 
-(3) Use the appropriate Latex package to compile the thesis
-template starting at the top (root) file in the top directory,
-namely "PhysicsThesis.tex".
+(3) The generated pdf contains useful knowledge on how to do basic latex as well as thesis structure
 
 (4) I added a lot of custom packages and commands, take a look through macros/use_packages for how to use these
 
