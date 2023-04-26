@@ -1,5 +1,14 @@
 April 26, 2023
 =============================================================
+Formatting
+-----------
+*Removed duplicate supervisory committee on abstract page
+*Removed signature lines from supervisory committee (github issue #18)
+*Changed left margin to 1" from 1.5" default, same as default right margin
+(github issue #16)
+
+Misc
+----------
 *Changed \include to \input in preamble of Thesis.tex
 *Changed "right single quotation mark (U+2019)" to "apostrophe (U+0027)" for
 UTF-8 encoding in chapters/5/chapter_evaluation.tex
