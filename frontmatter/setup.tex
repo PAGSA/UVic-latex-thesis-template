@@ -9,10 +9,10 @@
 B.Sc., University of WhoKnowsWhere, 2053\\
 M.Sc., University of AnotherOne, 2054}
 \newcommand\panel{%
-\HRule\\\panelist{Dr. R.\ Supervisor Main}{Supervisor}{Department of Same As Candidate}
-\HRule\\\panelist{Dr. M.\ Member One}{Departmental Member}{Department of Same As Candidate}
-\HRule\\\panelist{Dr. Member Two}{Departmental Member}{Department of Same As Candidate}
-\HRule\\\panelist{Dr. Outside Member}{Outside Member}{Department of Not Same As Candidate}}
+\\\panelist{Dr. R.\ Supervisor Main}{Supervisor}{Department of Same As Candidate}
+\\\panelist{Dr. M.\ Member One}{Departmental Member}{Department of Same As Candidate}
+\\\panelist{Dr. Member Two}{Departmental Member}{Department of Same As Candidate}
+\\\panelist{Dr. Outside Member}{Outside Member}{Department of Not Same As Candidate}}
 %\HRule\\\panelist{Dr. \Ans{Current Unknown}}{Additional Member}{Department of \Ans{Current Unknown Department}}}
 
 %*************************************************************************************************
@@ -52,10 +52,12 @@ M.Sc., University of AnotherOne, 2054}
 %*************************************************************************************************
 \input frontmatter/abstract
 
-
+\renewcommand{\contentsname}{\large\textbf{Table of Contents}}
 \TOCadd{Table of Contents}\tableofcontents
+\renewcommand{\listtablename}{\large\textbf{List of Tables}}
 \TOCadd{List of Tables}\listoftables
 \setcounter{lofdepth}{2}
+\renewcommand{\listfigurename}{\large\textbf{List of Figures}}
 \TOCadd{List of Figures}\listoffigures
 
 %\newpage  %These are needed for glossary

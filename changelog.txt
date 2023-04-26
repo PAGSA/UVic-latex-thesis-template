@@ -1,0 +1,25 @@
+April 26, 2023
+=============================================================
+Formatting
+-----------
+*Removed duplicate supervisory committee on abstract page
+*Removed signature lines from supervisory committee (github issue #18)
+*Changed left margin to 1" from 1.5" default, same as default right margin
+(github issue #16)
+*Changed preamble title styles (list of figures, abstract, etc..) to all
+match (github issue #17)
+*Moved appendices after bibliography
+
+Misc
+----------
+*Changed \include to \input in preamble of Thesis.tex
+*Changed "right single quotation mark (U+2019)" to "apostrophe (U+0027)" for
+UTF-8 encoding in chapters/5/chapter_evaluation.tex
+*Removed unnecessary \tpbreak in frontmatter/titlepage.tex
+*added .gitignore
+*added changelog.txt
+*Added lines to allow easier title style setting, could merge into single
+command in future
+*Renamed directories for more consistent style
+*Renamed files to be less physics specific
+*Updated README
