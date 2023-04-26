@@ -52,10 +52,12 @@ M.Sc., University of AnotherOne, 2054}
 %*************************************************************************************************
 \input frontmatter/abstract
 
-
+\renewcommand{\contentsname}{\large\textbf{Table of Contents}}
 \TOCadd{Table of Contents}\tableofcontents
+\renewcommand{\listtablename}{\large\textbf{List of Tables}}
 \TOCadd{List of Tables}\listoftables
 \setcounter{lofdepth}{2}
+\renewcommand{\listfigurename}{\large\textbf{List of Figures}}
 \TOCadd{List of Figures}\listoffigures
 
 %\newpage  %These are needed for glossary
