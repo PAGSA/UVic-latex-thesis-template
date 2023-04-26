@@ -9,3 +9,5 @@
 *.lot
 *.toc
 *.gz
+*.blg
+*.bbl
