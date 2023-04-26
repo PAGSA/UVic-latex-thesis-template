@@ -10,7 +10,7 @@ Orginal document distributed by University of Victoria Library, http://libguides
 
 (3) Use the appropriate Latex package to compile the thesis
 template starting at the top (root) file in the top directory,
-namely "PhysicsThesis.tex" in the folder "ThesisTemplate2017".
+namely "PhysicsThesis.tex".
 
 (4) I added a lot of custom packages and commands, take a look through macros/use_packages for how to use these
 
